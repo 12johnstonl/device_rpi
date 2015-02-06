@@ -10,10 +10,10 @@ ARCH_ARM_HAVE_FFS               := true
 ARCH_ARM_HAVE_VFP               := true
 
 ifeq ($(strip $(TARGET_ARCH_VARIANT_FPU)),)
-TARGET_ARCH_VARIANT_FPU         := vfp
+TARGET_ARCH_VARIANT_FPU         := vfpv3-d16
 endif
 ifeq ($(strip $(TARGET_ARCH_VARIANT_CPU)),)
-TARGET_ARCH_VARIANT_CPU         := arm1136jf-s
+TARGET_ARCH_VARIANT_CPU         := armv7-a
 endif
 
 # Note: Hard coding the 'tune' value here is probably not ideal,
